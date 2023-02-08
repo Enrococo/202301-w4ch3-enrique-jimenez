@@ -1,3 +1,9 @@
+h1 {
+  color: rgb(32, 32, 32);
+  font-weight: normal;
+  font-size: 3rem;
+}
+
 .App {
   text-align: center;
 }

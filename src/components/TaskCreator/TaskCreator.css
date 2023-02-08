@@ -11,12 +11,13 @@
 }
 
 .to-do-form__input {
-  height: 30px;
+  height: 35px;
   display: inline-block;
   border-radius: 4px;
   border-width: 1px 1px 1px 35px;
   border-color: #24a3b6;
   border-style: solid;
+  padding-left: 10px;
 }
 
 .button {
@@ -31,7 +32,7 @@
     sans-serif;
   font-size: 14px;
   font-weight: 500;
-  height: 30px;
+  height: 35px;
   line-height: 20px;
   list-style: none;
   margin: 0;

@@ -19,6 +19,7 @@ const TaskCreator: FC<TaskCreatorProps> = ({ onUpdate }) => {
         type="text"
         name="item"
         placeholder="New ToDo"
+        data-testid="item-input"
       ></input>
 
       <button className="button" type="submit" value="Submit">

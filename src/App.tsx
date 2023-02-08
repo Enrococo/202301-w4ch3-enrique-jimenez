@@ -10,9 +10,12 @@ function App() {
     console.log(list);
   }
   return (
-    <header className="App-header">
-      <TaskCreator onUpdate={getInput} />
-    </header>
+    <>
+      <header className="App-header">
+        <h1>TodoInput</h1>
+        <TaskCreator onUpdate={getInput} />
+      </header>
+    </>
   );
 }
 
