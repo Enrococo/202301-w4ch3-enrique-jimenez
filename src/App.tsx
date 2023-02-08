@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import TaskCreator from "./components/TaskCreator/TaskCreator";
 
 function App() {
+  const [list, updateList] = useState<string[]>([]);
+
+  function getInput(text: string) {
+    updateList(list.concat(text));
+    console.log(list);
+  }
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>TodoInput</h1>
+        <TaskCreator onUpdate={getInput} />
       </header>
-    </div>
+    </>
   );
 }
 
