@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import TaskCreator from "./components/TaskCreator/TaskCreator";
+import TaskList from "./components/TaskList/TaskList";
 
 function App() {
   const [list, updateList] = useState<string[]>([]);
@@ -15,6 +16,9 @@ function App() {
         <h1>TodoInput</h1>
         <TaskCreator onUpdate={getInput} />
       </header>
+      <main className="App-main">
+        <TaskList list={list} />
+      </main>
     </>
   );
 }

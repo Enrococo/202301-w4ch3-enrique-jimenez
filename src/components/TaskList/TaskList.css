@@ -1,0 +1,32 @@
+.toDoList {
+  display: flex;
+  border-width: 3px;
+  border-color: black;
+  width: 70%;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDoElements {
+  font-size: 1rem;
+  border-width: 0.5px;
+  border-color: grey;
+  border-style: solid;
+  padding: 10px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.fa-trash {
+  color: red;
+}
+
+.toDoElements__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
