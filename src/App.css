@@ -1,7 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* ul,
+* ol {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+* button {
+  border: none;
+}
+
 h1 {
   color: rgb(32, 32, 32);
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .App {
@@ -21,7 +37,6 @@ h1 {
 
 .App-header {
   background-color: #ececec;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +47,16 @@ h1 {
 
 .App-link {
   color: #61dafb;
+}
+
+.App-main {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-top: 20px;
 }
 
 @keyframes App-logo-spin {

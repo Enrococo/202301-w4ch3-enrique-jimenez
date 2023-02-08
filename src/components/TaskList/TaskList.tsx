@@ -8,10 +8,13 @@ interface TaskListProps {
 const TaskList: FC<TaskListProps> = ({ list }) => {
   return (
     <ul className="toDoList">
-      <h1>Shopping List</h1>
+      <h1>ToDo List</h1>
       {list.map((liElement, i) => (
         <li key={i} className="toDoElements">
           {liElement}
+          <div className="toDoElements__div">
+            <input type="checkbox" /> <i className="fa-solid fa-trash"></i>
+          </div>
         </li>
       ))}
     </ul>

@@ -16,9 +16,9 @@ function App() {
         <h1>TodoInput</h1>
         <TaskCreator onUpdate={getInput} />
       </header>
-      <div>
+      <main className="App-main">
         <TaskList list={list} />
-      </div>
+      </main>
     </>
   );
 }
