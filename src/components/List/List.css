@@ -1,0 +1,6 @@
+.toDoList {
+  border-width: 3px;
+  border-color: black;
+  max-width: 900px;
+  justify-self: center;
+}
