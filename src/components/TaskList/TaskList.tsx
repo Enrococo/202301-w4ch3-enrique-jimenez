@@ -13,7 +13,8 @@ const TaskList: FC<TaskListProps> = ({ list }) => {
         <li key={i} className="toDoElements">
           {liElement}
           <div className="toDoElements__div">
-            <input type="checkbox" /> <i className="fa-solid fa-trash"></i>
+            <input type="checkbox" />
+            <i className="fa-solid fa-trash"></i>
           </div>
         </li>
       ))}
